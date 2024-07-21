@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-reeeeenz
-=======
-this is main branch
->>>>>>> parent of e330b4c (edited the text file)
+renzzz
