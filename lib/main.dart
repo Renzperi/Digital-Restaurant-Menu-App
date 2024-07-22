@@ -3,14 +3,8 @@ import 'About_us.dart';
 import 'Specials.dart';
 import 'Home.dart';
 
-<<<<<<< HEAD
 void main() {
   runApp(const MyApp());
-=======
-
-void main() {
-  runApp(const MyApp()); 
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
 }
 
 class MyApp extends StatelessWidget {
@@ -19,10 +13,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-<<<<<<< HEAD
-=======
-   
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
@@ -37,11 +27,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
@@ -56,14 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD
         title: const Text(
           'DIGIRESTO',
           style: TextStyle(fontFamily: 'Rosarivo-Regular'),
         ),
-=======
-        title: const Text('DIGIRESTO', style: TextStyle(fontFamily: 'Rosarivo-Regular'),),
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
       ),
       body: IndexedStack(
         index: _currentIndex,
@@ -75,7 +56,6 @@ class _MyHomePageState extends State<MyHomePage> {
               );
             },
           ),
-<<<<<<< HEAD
           Navigator(
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
@@ -94,30 +74,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-=======
-        Navigator(
-            onGenerateRoute: (settings) {
-              return MaterialPageRoute(
-                builder: (context) => const About_us(), //Route papuntang About us
-              );
-            },
-          ),
-
-           Navigator(
-            onGenerateRoute: (settings) {
-              return MaterialPageRoute(
-                builder: (context) => const Specials(), //Route papuntang Specials
-              );
-            },
-          ),
-
-        ],
-      ),
-
-
-
-
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {
@@ -131,30 +87,18 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-<<<<<<< HEAD
             icon: Icon(
               Icons.info,
               color: Colors.black,
             ),
-=======
-            icon: Icon(Icons.info, color: Colors.black,),
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
             label: 'About us',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.restaurant_sharp, color: Colors.black),
             label: 'Specials',
           ),
-<<<<<<< HEAD
-=======
-
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
         ],
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d5a22f2c66a40194fe1218023db947aa38f8612b
