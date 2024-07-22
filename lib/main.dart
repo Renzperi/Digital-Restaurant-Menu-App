@@ -42,11 +42,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+          title: const Center(
+        child: Text(
           'DIGIRESTO',
-          style: TextStyle(fontFamily: 'Rosarivo-Regular'),
+          style: TextStyle(
+            fontFamily: 'Rosarivo-Regular',
+          ),
         ),
-      ),
+      )),
       body: IndexedStack(
         index: _currentIndex,
         children: [
