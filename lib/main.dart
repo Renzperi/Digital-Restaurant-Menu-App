@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'About_us.dart';
 import 'Specials.dart';
-import 'Home.dart';
+import 'appetizer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,7 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Navigator(
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
-                builder: (context) => const Home(), //Route papuntang Home
+                builder: (context) =>
+                    const Appetizer(), //Route papuntang appetizer page
               );
             },
           ),
@@ -81,20 +83,28 @@ class _MyHomePageState extends State<MyHomePage> {
             _currentIndex = index; // Update the selected tab index
           });
         },
+        selectedItemColor: Colors.black, //color of bottom nav label if selected
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home, color: Colors.black),
-            label: 'Home',
+            icon: Icon(Icons.breakfast_dining,
+                color: Color.fromARGB(255, 203, 236, 15)), //color of appetizer
+            label: 'Appetizers',
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.info,
-              color: Colors.black,
+              Icons.restaurant_menu_sharp,
+              color: Color.fromARGB(255, 247, 4, 4), //color of main dishes
             ),
-            label: 'About us',
+            label: 'Main',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.restaurant_sharp, color: Colors.black),
+            icon: Icon(Icons.cake_sharp,
+                color: Color.fromARGB(255, 255, 119, 183)), //color of desserts
+            label: 'Desserts',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.star_purple500_rounded,
+                color: Color.fromARGB(255, 0, 255, 0)), //color of specials
             label: 'Specials',
           ),
         ],

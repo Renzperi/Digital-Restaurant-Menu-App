@@ -56,6 +56,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "flutter_svg",
+      "rootUri": "file:///C:/Users/admin/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_svg-1.1.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///C:/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -108,6 +114,24 @@
       "rootUri": "file:///C:/Users/admin/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "path_drawing",
+      "rootUri": "file:///C:/Users/admin/AppData/Local/Pub/Cache/hosted/pub.dev/path_drawing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "path_parsing",
+      "rootUri": "file:///C:/Users/admin/AppData/Local/Pub/Cache/hosted/pub.dev/path_parsing-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "petitparser",
+      "rootUri": "file:///C:/Users/admin/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "sky_engine",
@@ -164,13 +188,19 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "xml",
+      "rootUri": "file:///C:/Users/admin/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
       "name": "digital_restaurant_menu_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     }
   ],
-  "generated": "2024-07-21T14:41:27.280960Z",
+  "generated": "2024-07-22T19:05:39.181977Z",
   "generator": "pub",
   "generatorVersion": "3.4.3",
   "flutterRoot": "file:///C:/flutter",
