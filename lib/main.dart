@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'About_us.dart';
+import 'dessert.dart';
 import 'Specials.dart';
 import 'appetizer.dart';
 import 'main_dish.dart';
@@ -21,8 +21,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const MyHomePage(),
-        '/About_us': (context) => const About_us(),
-        '/Staff': (context) => const Specials(),
       },
     );
   }
@@ -73,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
                 builder: (context) =>
-                    const About_us(), //Route papuntang About us
+                    const Dessert(), //Route papuntang About us
               );
             },
           ),
