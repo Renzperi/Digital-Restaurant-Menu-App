@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'About_us.dart';
 import 'Specials.dart';
 import 'appetizer.dart';
+import 'main_dish.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,6 +55,14 @@ class _MyHomePageState extends State<MyHomePage> {
               return MaterialPageRoute(
                 builder: (context) =>
                     const Appetizer(), //Route papuntang appetizer page
+              );
+            },
+          ),
+          Navigator(
+            onGenerateRoute: (settings) {
+              return MaterialPageRoute(
+                builder: (context) =>
+                    const MainDish(), //Route papuntang main dish page
               );
             },
           ),

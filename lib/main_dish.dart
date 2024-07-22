@@ -5,8 +5,8 @@ void main() {
   runApp(const MyApp());
 }
 
-class Appetizer extends StatelessWidget {
-  const Appetizer({super.key});
+class MainDish extends StatelessWidget {
+  const MainDish({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class Appetizer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'APPETIZERS MENU',
+                  'MAIN DISHES',
                   style:
                       TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
                 ),
