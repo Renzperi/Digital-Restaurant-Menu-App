@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dessert.dart';
-import 'Specials.dart';
+import 'specials.dart';
 import 'appetizer.dart';
 import 'main_dish.dart';
 
