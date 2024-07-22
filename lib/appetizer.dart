@@ -19,7 +19,7 @@ class Appetizer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'MENU',
+                  'APPETIZER MENU',
                   style:
                       TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
                 ),
@@ -32,7 +32,7 @@ class Appetizer extends StatelessWidget {
                     children: [
                       const Center(
                         child: Text(
-                          'Main Course',
+                          'Chip and Dips',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -40,26 +40,18 @@ class Appetizer extends StatelessWidget {
                           ),
                         ),
                       ),
+                      //list of chips and dips
                       _buildPicture(
                           'assets/images/image1.png', 'Pizza Italiano', '₱750'),
                       _buildPicture(
                           'assets/images/image2.png', 'Cesar Salad', '₱150'),
-                      _buildPicture('assets/images/image3.png',
-                          'Truffle Arancini', '₱200'),
-                      _buildPicture('assets/images/image4.png',
-                          'Beet and Goat Cheese Salad', '₱250'),
-                      _buildPicture('assets/images/image5.png',
-                          'Maine Lobster Tail', '₱1100'),
-                      _buildPicture('assets/images/image6.png',
-                          'Wild Mushroom Risotto', '₱200'),
-
+                      //end of chips and dips
                       const SizedBox(
                           height:
                               30), // Add space between Main Course and Appetizers
-
                       const Center(
                         child: Text(
-                          'Appetizers',
+                          'Cocktails',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -67,24 +59,19 @@ class Appetizer extends StatelessWidget {
                           ),
                         ),
                       ),
-
                       const SizedBox(height: 10),
+                      //list of cocktails
                       _buildPicture('assets/images/image7.jpg',
                           'Oysters on the Half Shell', '₱750'),
                       _buildPicture('assets/images/image8.jpg',
                           'Foie Gras Terine', '₱750'),
-                      _buildPicture('assets/images/image9.jpg',
-                          'Pan Seared Scallops', '₱900'),
-                      _buildPicture('assets/images/image10.jpg',
-                          'Wild Mushroom Risotto', '₱900'),
-
+                      //end of cocktails
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Appetizers
-
                       const Center(
                         child: Text(
-                          'Desserts',
+                          'Fruit Appetizers',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -92,35 +79,15 @@ class Appetizer extends StatelessWidget {
                           ),
                         ),
                       ),
-
+                      //list of fruit appetizers
                       _buildPicture(
                           'assets/images/image11.jpg', 'Crame brulee', '₱900'),
                       _buildPicture('assets/images/image12.jpg',
                           'Chocolate Lava Cake', '₱900'),
-                      _buildPicture(
-                          'assets/images/image13.jpg', 'Chessecake', '₱900'),
-                      _buildPicture(
-                          'assets/images/image14.jpg', 'Tiramisu', '₱900'),
-
+                      //end of fruit appetizers
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Beverages
-
-                      const Center(
-                        child: Text(
-                          'Beverages',
-                          style: TextStyle(
-                            fontFamily: 'Rosarivo-Regular',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-
-                      _buildPicture('assets/images/image15.jpg',
-                          'Novellino Red Wine', '₱900'),
-                      _buildPicture('assets/images/image16.jpg',
-                          'Lieblling Wine', '₱900'),
                     ],
                   ),
                 ),
