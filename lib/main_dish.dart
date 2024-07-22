@@ -32,7 +32,7 @@ class MainDish extends StatelessWidget {
                     children: [
                       const Center(
                         child: Text(
-                          'Chip and Dips',
+                          'Meat Options',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -40,18 +40,18 @@ class MainDish extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //list of chips and dips
+                      //list of Meat Options Dishes
                       _buildPicture(
                           'assets/images/image1.png', 'Pizza Italiano', '₱750'),
                       _buildPicture(
                           'assets/images/image2.png', 'Cesar Salad', '₱150'),
-                      //end of chips and dips
+                      //end of Meat Dishes
                       const SizedBox(
                           height:
                               30), // Add space between Main Course and Appetizers
                       const Center(
                         child: Text(
-                          'Cocktails',
+                          'Sea Foods',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -60,18 +60,18 @@ class MainDish extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      //list of cocktails
+                      //list of Sea foods
                       _buildPicture('assets/images/image7.jpg',
                           'Oysters on the Half Shell', '₱750'),
                       _buildPicture('assets/images/image8.jpg',
                           'Foie Gras Terine', '₱750'),
-                      //end of cocktails
+                      //end of Sea foods
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Appetizers
                       const Center(
                         child: Text(
-                          'Fruit Appetizers',
+                          'Veggie Meals',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -79,12 +79,29 @@ class MainDish extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //list of fruit appetizers
+                      //list of veggie meals
                       _buildPicture(
                           'assets/images/image11.jpg', 'Crame brulee', '₱900'),
                       _buildPicture('assets/images/image12.jpg',
                           'Chocolate Lava Cake', '₱900'),
-                      //end of fruit appetizers
+                      //end of veggie meals
+                      const SizedBox(height: 30),
+                      const Center(
+                        child: Text(
+                          'Pasta Dishes',
+                          style: TextStyle(
+                            fontFamily: 'Rosarivo-Regular',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      //list of Pasta dishes
+                      _buildPicture(
+                          'assets/images/image11.jpg', 'Crame brulee', '₱900'),
+                      _buildPicture('assets/images/image12.jpg',
+                          'Chocolate Lava Cake', '₱900'),
+                      //end of pasta iitaalianoo
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Beverages
