@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'About_us.dart';
 import 'Specials.dart';
-import 'Home.dart';
+import 'appetizer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -52,7 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
           Navigator(
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
-                builder: (context) => const Home(), //Route papuntang Home
+                builder: (context) =>
+                    const Appetizer(), //Route papuntang appetizer page
               );
             },
           ),
@@ -81,17 +82,22 @@ class _MyHomePageState extends State<MyHomePage> {
             _currentIndex = index; // Update the selected tab index
           });
         },
+        selectedItemColor: Colors.black, //color of bottom nav label if selected
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home, color: Colors.black),
-            label: 'Home',
+            label: 'Appetizers',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.info,
               color: Colors.black,
             ),
-            label: 'About us',
+            label: 'Main',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home, color: Colors.black),
+            label: 'Desserts',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.restaurant_sharp, color: Colors.black),
