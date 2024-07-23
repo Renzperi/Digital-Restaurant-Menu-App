@@ -1,0 +1,19 @@
+appetizers 
+ -chips and dips
+ -cockails
+ -fruits
+
+main
+ -meat options
+ -sea food
+ -veggie meals
+ -pasta dishes 
+
+desserts
+ -cakes
+ -frozen
+ -pies
+ -pudding
+
+specials
+ -add 5 diff dishes from any category
