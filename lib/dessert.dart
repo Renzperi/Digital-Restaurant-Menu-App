@@ -5,8 +5,8 @@ void main() {
   runApp(const MyApp());
 }
 
-class Appetizer extends StatelessWidget {
-  const Appetizer({super.key});
+class Dessert extends StatelessWidget {
+  const Dessert({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class Appetizer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'APPETIZERS MENU',
+                  'DESSERT OPTIONS',
                   style:
                       TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
                 ),
@@ -32,7 +32,7 @@ class Appetizer extends StatelessWidget {
                     children: [
                       const Center(
                         child: Text(
-                          'Chip and Dips',
+                          'Cakes',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -40,20 +40,18 @@ class Appetizer extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //list of chips and dips
+                      //list of Cakes
                       _buildPicture(
-                          'assets/images/Chips/Jalapeno-Popper-Dip.png',
-                          'Pizza Italiano',
-                          '₱750'),
+                          'assets/images/image1.png', 'Pizza Italiano', '₱750'),
                       _buildPicture(
                           'assets/images/image2.png', 'Cesar Salad', '₱150'),
-                      //end of chips and dips
+                      //end of Cakes
                       const SizedBox(
                           height:
                               30), // Add space between Main Course and Appetizers
                       const Center(
                         child: Text(
-                          'Cocktails',
+                          'Frozen Sweets',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -62,18 +60,18 @@ class Appetizer extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      //list of cocktails
+                      //list of Frozen sweets
                       _buildPicture('assets/images/image7.jpg',
                           'Oysters on the Half Shell', '₱750'),
                       _buildPicture('assets/images/image8.jpg',
                           'Foie Gras Terine', '₱750'),
-                      //end of cocktails
+                      //end of frozen sweets
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Appetizers
                       const Center(
                         child: Text(
-                          'Fruit Appetizers',
+                          'Pies',
                           style: TextStyle(
                             fontFamily: 'Rosarivo-Regular',
                             fontSize: 18,
@@ -81,12 +79,29 @@ class Appetizer extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //list of fruit appetizers
+                      //list of Pies
                       _buildPicture(
                           'assets/images/image11.jpg', 'Crame brulee', '₱900'),
                       _buildPicture('assets/images/image12.jpg',
                           'Chocolate Lava Cake', '₱900'),
-                      //end of fruit appetizers
+                      //end of Pies
+                      const SizedBox(height: 30),
+                      const Center(
+                        child: Text(
+                          'Pudding',
+                          style: TextStyle(
+                            fontFamily: 'Rosarivo-Regular',
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      //list of Pudding
+                      _buildPicture(
+                          'assets/images/image11.jpg', 'Crame brulee', '₱900'),
+                      _buildPicture('assets/images/image12.jpg',
+                          'Chocolate Lava Cake', '₱900'),
+                      //end of Puddings
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Beverages

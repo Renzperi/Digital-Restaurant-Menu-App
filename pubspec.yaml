@@ -54,6 +54,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/images/Chips/Jalapeno-Popper-Dip.png
     - assets/images/image1.png
     - assets/images/image2.png
     - assets/images/image3.png
