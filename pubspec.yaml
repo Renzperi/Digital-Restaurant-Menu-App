@@ -54,22 +54,55 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/image1.png
+    - assets/images/pizza ittaliano.png
     - assets/images/image2.png
     - assets/images/image3.png
     - assets/images/image4.png
     - assets/images/image5.png
     - assets/images/image6.png
-    - assets/images/image7.jpg
+    - assets/images/oysters.jpg
     - assets/images/image8.jpg
     - assets/images/image9.jpg
     - assets/images/image10.jpg
-    - assets/images/image11.jpg
-    - assets/images/image12.jpg
-    - assets/images/image13.jpg
+    - assets/images/Crame brulee.jpg
+    - assets/images/Lava Cake.jpg
+    - assets/images/Cheese Cake.jpg
     - assets/images/image14.jpg
-    - assets/images/image15.jpg
-    - assets/images/image16.jpg
+    - assets/images/Red Wine.jpg
+    - assets/images/White Wine.jpg
+    - assets/images/buffalo-chicken-dip.jpg
+    - assets/images/Blue-Cheese-Dip.jpg
+    - assets/images/Bacon-Cheddar-Dip.jpg
+    - assets/images/Caprese Skewers.jpg
+    - assets/images/Strawberry-Balsamic-Bruschetta.jpg
+    - assets/images/stuffed-dates.jpg
+    - assets/images/grilled steak.jpg
+    - assets/images/roast chicken.jpg
+    - assets/images/lamb chops.jpg
+    - assets/images/chicken wings.jpg
+    - assets/images/Beef-Burgers.jpg
+    - assets/images/grilled salmon.jpeg
+    - assets/images/lobster-tail.jpg
+    - assets/images/tuna_steak.jpg
+    - assets/images/Calamari.jpg
+    - assets/images/cauliflower curry.jpg
+    - assets/images/eggplant-parmesan.jpg
+    - assets/images/greeksalad.jpg
+    - assets/images/Lasagna.jpg
+    - assets/images/Carbonara.jpg
+    - assets/images/Mac-Cheese.jpg
+    - assets/images/Strawberry Cake.jpg
+    - assets/images/Blue Berry Cheese Cake.jpg
+    - assets/images/banana split.jpg
+    - assets/images/Ice-Cream-Sundae.jpg
+    - assets/images/Gelato.jpg
+    - assets/images/Blue Berry Pie.jpg
+    - assets/images/Apple Pie.jpg
+    - assets/images/Cherry Pie.jpg
+    - assets/images/Chocolate Pudding.jpg
+    - assets/images/Vanilla Pudding.jpg
+    - assets/images/Bread Pudding.jpg
+    
 
   fonts:
     - family: Rosarivo-Regular

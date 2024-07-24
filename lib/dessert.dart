@@ -40,12 +40,29 @@ class Dessert extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //list of Cakes
+                      // List of Cakes
                       _buildPicture(
-                          'assets/images/image1.png', 'Pizza Italiano', '₱750'),
+                          'assets/images/Lava Cake.jpg', 
+                          'Lava Cake', 
+                          '₱750',
+                          'A decadent chocolate cake with a gooey molten center.'),
                       _buildPicture(
-                          'assets/images/image2.png', 'Cesar Salad', '₱150'),
-                      //end of Cakes
+                          'assets/images/Cheese Cake.jpg', 
+                          'Cheese Cake', 
+                          '₱150',
+                          'A rich and creamy cheesecake with a graham cracker crust.'),
+                      _buildPicture(
+                          'assets/images/Strawberry Cake.jpg', 
+                          'Strawberry Cake', 
+                          '₱150',
+                          'A moist cake layered with fresh strawberries and cream.'),
+                      _buildPicture(
+                          'assets/images/Blue Berry Cheese Cake.jpg', 
+                          'Blue Berry Cheese Cake', 
+                          '₱150',
+                          'Classic cheesecake topped with a sweet blueberry compote.'),
+                      // End of Cakes
+
                       const SizedBox(
                           height:
                               30), // Add space between Main Course and Appetizers
@@ -60,12 +77,20 @@ class Dessert extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      //list of Frozen sweets
-                      _buildPicture('assets/images/image7.jpg',
-                          'Oysters on the Half Shell', '₱750'),
-                      _buildPicture('assets/images/image8.jpg',
-                          'Foie Gras Terine', '₱750'),
-                      //end of frozen sweets
+                      // List of Frozen sweets
+                      _buildPicture('assets/images/banana split.jpg',
+                          'Banana Split', 
+                          '₱150',
+                          'A classic dessert with bananas, ice cream, and a variety of toppings.'),
+                      _buildPicture('assets/images/Ice-Cream-Sundae.jpg',
+                          'Ice Cream Sundae', 
+                          '₱150',
+                          'Ice cream topped with sauces, nuts, and whipped cream.'),
+                      _buildPicture('assets/images/Gelato.jpg',
+                          'Gelato', 
+                          '₱150',
+                          'A rich and creamy Italian-style ice cream.'),
+                      // End of frozen sweets
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Appetizers
@@ -79,12 +104,21 @@ class Dessert extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //list of Pies
+                      // List of Pies
                       _buildPicture(
-                          'assets/images/image11.jpg', 'Crame brulee', '₱900'),
-                      _buildPicture('assets/images/image12.jpg',
-                          'Chocolate Lava Cake', '₱900'),
-                      //end of Pies
+                          'assets/images/Blue Berry Pie.jpg', 
+                          'Blue Berry Pie', 
+                          '₱900',
+                          'A pie filled with sweet and tangy blueberries.'),
+                      _buildPicture('assets/images/Apple Pie.jpg',
+                          'Apple Pie', 
+                          '₱900',
+                          'A classic pie with spiced apples and a flaky crust.'),
+                      _buildPicture('assets/images/Cherry Pie.jpg',
+                          'Cherry Pie', 
+                          '₱900',
+                          'A tart and sweet pie made with fresh cherries.'),
+                      // End of Pies
                       const SizedBox(height: 30),
                       const Center(
                         child: Text(
@@ -96,12 +130,21 @@ class Dessert extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //list of Pudding
+                      // List of Pudding
                       _buildPicture(
-                          'assets/images/image11.jpg', 'Crame brulee', '₱900'),
-                      _buildPicture('assets/images/image12.jpg',
-                          'Chocolate Lava Cake', '₱900'),
-                      //end of Puddings
+                          'assets/images/Chocolate Pudding.jpg', 
+                          'Chocolate Pudding', 
+                          '₱900',
+                          'A rich and creamy chocolate dessert.'),
+                      _buildPicture('assets/images/Bread Pudding.jpg',
+                          'Bread Pudding', 
+                          '₱900',
+                          'A warm and comforting dessert made with bread and custard.'),
+                      _buildPicture('assets/images/Vanilla Pudding.jpg',
+                          'Vanilla Pudding', 
+                          '₱900',
+                          'A smooth and creamy vanilla-flavored pudding.'),
+                      // End of Puddings
                       const SizedBox(
                           height:
                               30), // Add space between Desserts and Beverages
@@ -116,7 +159,7 @@ class Dessert extends StatelessWidget {
     );
   }
 
-  Widget _buildPicture(String imagePath, String dishName, String price) {
+  Widget _buildPicture(String imagePath, String dishName, String price, String description) {
     return Container(
       width: 140, // Set a fixed width for each card
       margin: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -156,6 +199,13 @@ class Dessert extends StatelessWidget {
                   Text(
                     price,
                     style: const TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                  Text(
+                    description,
+                    style: const TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.bold, color: Colors.black),
+                    maxLines: 2, // Limit to two lines
+                    overflow: TextOverflow.ellipsis, // Add ellipsis if overflow
                   ),
                 ],
               ),

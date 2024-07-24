@@ -42,10 +42,27 @@ class Appetizer extends StatelessWidget {
                       ),
                       //list of chips and dips
                       _buildPicture(
-                          'assets/images/image1.png', 'Pizza Italiano', '₱750'),
+                          'assets/images/buffalo-chicken-dip.jpg',
+                          'Buffalo Chicken Dip',
+                          '₱150',
+                          'A creamy, spicy dip made with shredded chicken, cream cheese, and Buffalo sauce.'),
                       _buildPicture(
-                          'assets/images/image2.png', 'Cesar Salad', '₱150'),
+                          'assets/images/image2.png',
+                          'Caesar Salad',
+                          '₱150',
+                          'Crispy romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.'),
+                      _buildPicture(
+                          'assets/images/Blue-Cheese-Dip.jpg',
+                          'Blue Cheese Dip',
+                          '₱150',
+                          'A rich and tangy dip made with creamy blue cheese and sour cream.'),
+                      _buildPicture(
+                          'assets/images/Bacon-Cheddar-Dip.jpg',
+                          'Bacon Cheddar Dip',
+                          '₱150',
+                          'A savory dip with crispy bacon, sharp cheddar cheese, and creamy base.'),
                       //end of chips and dips
+
                       const SizedBox(
                           height:
                               30), // Add space between Main Course and Appetizers
@@ -61,10 +78,16 @@ class Appetizer extends StatelessWidget {
                       ),
                       const SizedBox(height: 10),
                       //list of cocktails
-                      _buildPicture('assets/images/image7.jpg',
-                          'Oysters on the Half Shell', '₱750'),
-                      _buildPicture('assets/images/image8.jpg',
-                          'Foie Gras Terine', '₱750'),
+                      _buildPicture(
+                          'assets/images/Red Wine.jpg',
+                          'Red Wine',
+                          '₱250',
+                          'A selection of fine red wines to complement your meal.'),
+                      _buildPicture(
+                          'assets/images/White Wine.jpg',
+                          'White Wine',
+                          '₱250',
+                          'A selection of crisp and refreshing white wines.'),
                       //end of cocktails
                       const SizedBox(
                           height:
@@ -81,9 +104,25 @@ class Appetizer extends StatelessWidget {
                       ),
                       //list of fruit appetizers
                       _buildPicture(
-                          'assets/images/image11.jpg', 'Crame brulee', '₱900'),
-                      _buildPicture('assets/images/image12.jpg',
-                          'Chocolate Lava Cake', '₱900'),
+                          'assets/images/Crame brulee.jpg',
+                          'Creme Brulee',
+                          '₱150',
+                          'A creamy custard dessert topped with a layer of caramelized sugar.'),
+                      _buildPicture(
+                          'assets/images/Caprese Skewers.jpg',
+                          'Caprese Skewers',
+                          '₱150',
+                          'Skewers of cherry tomatoes, mozzarella, and basil drizzled with balsamic glaze.'),
+                      _buildPicture(
+                          'assets/images/Strawberry-Balsamic-Bruschetta.jpg',
+                          'Strawberry Balsamic Bruschetta',
+                          '₱150',
+                          'Toasted baguette topped with strawberries, basil, and balsamic reduction.'),
+                      _buildPicture(
+                          'assets/images/stuffed-dates.jpg',
+                          'Stuffed Dates',
+                          '₱150',
+                          'Dates filled with creamy goat cheese and a sprinkle of nuts.'),
                       //end of fruit appetizers
                       const SizedBox(
                           height:
@@ -99,7 +138,7 @@ class Appetizer extends StatelessWidget {
     );
   }
 
-  Widget _buildPicture(String imagePath, String dishName, String price) {
+  Widget _buildPicture(String imagePath, String dishName, String price, String description) {
     return Container(
       width: 140, // Set a fixed width for each card
       margin: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -139,6 +178,12 @@ class Appetizer extends StatelessWidget {
                   Text(
                     price,
                     style: const TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                  Text(
+                    description,
+                    style: const TextStyle(fontSize: 12,fontWeight: FontWeight.bold, color: Colors.black),
+                    maxLines: 2, // Limit to two lines
+                    overflow: TextOverflow.ellipsis, // Add ellipsis if overflow
                   ),
                 ],
               ),

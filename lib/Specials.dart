@@ -31,14 +31,19 @@ class Specials extends StatelessWidget {
                     scrollDirection: Axis.vertical,
                     children: [
                       //list of Specials
-                      _buildPicture(
-                          'assets/images/image1.png', 'Pizza Italiano', '₱750'),
-                      _buildPicture(
-                          'assets/images/image2.png', 'Cesar Salad', '₱150'),
-                      _buildPicture(
-                          'assets/images/image2.png', 'Cesar Salad', '₱150'),
-                      _buildPicture(
-                          'assets/images/image2.png', 'Cesar Salad', '₱150'),
+                        _buildPicture(
+                          'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750', 'Juicy, tender steak grilled to perfection and served with sides.'),
+                        _buildPicture('assets/images/oysters.jpg',
+                          'Oysters on the Half Shell', '₱750', 'Fresh oysters served with lemon and cocktail sauce.'),
+                         _buildPicture(
+                          'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900', 'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
+                        _buildPicture(
+                          'assets/images/Lava Cake.jpg', 
+                          'Lava Cake', 
+                          '₱750',
+                          'A decadent chocolate cake with a gooey molten center.'),
+                          _buildPicture(
+                          'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150', 'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
                       //end of Specials
                       const SizedBox(
                           height:
@@ -54,7 +59,7 @@ class Specials extends StatelessWidget {
     );
   }
 
-  Widget _buildPicture(String imagePath, String dishName, String price) {
+  Widget _buildPicture(String imagePath, String dishName, String price, String description) {
     return Container(
       width: 140, // Set a fixed width for each card
       margin: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -95,6 +100,13 @@ class Specials extends StatelessWidget {
                     price,
                     style: const TextStyle(fontSize: 12, color: Colors.grey),
                   ),
+                  Text(
+                    description,
+                    style: const TextStyle(fontSize: 12,fontWeight: FontWeight.bold, color: Colors.black),
+                    maxLines: 2, // Limit to two lines
+                    overflow: TextOverflow.ellipsis, // Add ellipsis if overflow
+                  ),
+                  
                 ],
               ),
             ),
