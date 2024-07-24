@@ -3,6 +3,7 @@ import 'dessert.dart';
 import 'specials.dart';
 import 'appetizer.dart';
 import 'main_dish.dart';
+import 'splash_screen.dart'; // Import the splash screen
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => const MyHomePage(),
+        '/': (context) => const SplashScreen(), // Set splash screen as initial route
+        '/home': (context) => const MyHomePage(), // Route to the home page
       },
     );
   }

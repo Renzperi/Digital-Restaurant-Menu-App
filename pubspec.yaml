@@ -55,19 +55,10 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/pizza ittaliano.png
-    - assets/images/image2.png
-    - assets/images/image3.png
-    - assets/images/image4.png
-    - assets/images/image5.png
-    - assets/images/image6.png
-    - assets/images/oysters.jpg
-    - assets/images/image8.jpg
-    - assets/images/image9.jpg
-    - assets/images/image10.jpg
     - assets/images/Crame brulee.jpg
     - assets/images/Lava Cake.jpg
+    - assets/images/Caeser Salad.png
     - assets/images/Cheese Cake.jpg
-    - assets/images/image14.jpg
     - assets/images/Red Wine.jpg
     - assets/images/White Wine.jpg
     - assets/images/buffalo-chicken-dip.jpg
