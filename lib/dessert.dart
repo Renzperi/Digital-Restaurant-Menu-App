@@ -1,31 +1,80 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
+import 'dart:ui';
 
 void main() {
   runApp(const MyApp());
 }
 
-class Dessert extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Dessert Menu',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const Dessert(),
+    );
+  }
+}
+
+class Dessert extends StatefulWidget {
   const Dessert({super.key});
+
+  @override
+  _DessertState createState() => _DessertState();
+}
+
+class _DessertState extends State<Dessert> {
+  final ScrollController _scrollController = ScrollController();
+  Color _titleColor = Colors.white;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(() {
+      double offset = _scrollController.offset;
+      double percentage = (offset / 150).clamp(0, 1); // Adjust the value 150 based on your expandedHeight
+      setState(() {
+        _titleColor = Color.lerp(Colors.white, Colors.black, percentage)!;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: CustomScrollView(
+        controller: _scrollController,
         slivers: [
           SliverAppBar(
             expandedHeight: 150.0, // Set the height of the expanded AppBar
             flexibleSpace: FlexibleSpaceBar(
-              title: const Text(
-                'DESSERT OPTIONS',
+              title: Text(
+                'Desserts',
                 style: TextStyle(
+                  color: _titleColor,
                   fontFamily: 'Gabarito-Regular',
-                  fontSize: 20,
+                  fontSize: 25,
                 ),
               ),
               centerTitle: true,
-              background: Container(
-                color: Colors.white, // Optional: Add a background color
+              background: Stack(
+                fit: StackFit.expand,
+                children: [
+                  Image.asset(
+                    'assets/images/restobg.jpg', // Replace with your image path
+                    fit: BoxFit.cover,
+                  ),
+                  BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0), // Adjust the blur strength as needed
+                    child: Container(
+                      color: Colors.black.withOpacity(0), // Optional: Adds a translucent overlay
+                    ),
+                  ),
+                ],
               ),
             ),
             pinned: true, // Makes the AppBar stick at the top
@@ -137,7 +186,7 @@ class Dessert extends StatelessWidget {
                     Text(
                       description,
                       style: const TextStyle(
-                          fontSize: 12, fontWeight: FontWeight.bold, color: Colors.black),
+                          fontSize: 12, fontFamily:'Gabarito-Regular', color: Colors.black),
                       maxLines: 2, // Limit to two lines
                       overflow: TextOverflow.ellipsis, // Add ellipsis if overflow
                     ),
