@@ -94,12 +94,24 @@ flutter:
     - assets/images/Chocolate Pudding.jpg
     - assets/images/Vanilla Pudding.jpg
     - assets/images/Bread Pudding.jpg
+    - assets/images/Logo.png
+    - assets/images/restobg.jpg
     
 
   fonts:
     - family: Rosarivo-Regular
       fonts:
         - asset: assets/Rosarivo-Regular.ttf
+
+    - family: Gabarito-Bold
+      fonts:
+        - asset: assets/Gabarito-Bold.ttf
+
+    - family: Gabarito-Regular
+      fonts:
+        - asset: assets/Gabarito-Regular.ttf
+
+    
   # fonts:
   #   - family: Schyler
   #     fonts:

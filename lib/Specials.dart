@@ -1,41 +1,80 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
+import 'dart:ui';
 
-void main() {
-  runApp(const MyApp());
+class Specials extends StatefulWidget {
+  const Specials({super.key});
+
+  @override
+  _SpecialsState createState() => _SpecialsState();
 }
 
-class Specials extends StatelessWidget {
-  const Specials({super.key});
+class _SpecialsState extends State<Specials> {
+  final ScrollController _scrollController = ScrollController();
+  Color _titleColor = Colors.white;
+
+  @override
+  void initState() {
+    super.initState();
+    _scrollController.addListener(() {
+      double offset = _scrollController.offset;
+      double percentage = (offset / 150).clamp(0, 1); // Adjust the value 150 based on your expandedHeight
+      setState(() {
+        _titleColor = Color.lerp(Colors.white, Colors.black, percentage)!;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Column(
-        children: [
-          const Text(
-            'SPECIALS MENU',
-            style: TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
+      body: CustomScrollView(
+        controller: _scrollController,
+        slivers: [
+          SliverAppBar(
+            expandedHeight: 150.0, // Set the height of the expanded AppBar
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                'Specials',
+                style: TextStyle(
+                  color: _titleColor,
+                  fontFamily: 'Gabarito-Regular',
+                  fontSize: 25,
+                ),
+              ),
+              centerTitle: true,
+              background: Stack(
+                fit: StackFit.expand,
+                children: [
+                  Image.asset(
+                    'assets/images/restobg.jpg', // Replace with your image path
+                    fit: BoxFit.cover,
+                  ),
+                  BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0), // Adjust the blur strength as needed
+                    child: Container(
+                      color: Colors.black.withOpacity(0.2), // Optional: Adds a translucent overlay
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            pinned: true, // Makes the AppBar stick at the top
+            floating: false, // Make it not float over the content
+            snap: false, // Snap effect when scrolling
           ),
-          const SizedBox(height: 20), // Space between title and list
-          Expanded(
-            child: ListView(
-              children: [
-                // List of Specials
-                _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750',
-                    'Juicy, tender steak grilled to perfection and served with sides.'),
-                _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750',
-                    'Fresh oysters served with lemon and cocktail sauce.'),
-                _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900',
-                    'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
-                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750',
-                    'A decadent chocolate cake with a gooey molten center.'),
-                _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150',
-                    'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
-                // End of Specials
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                const SizedBox(height: 20), // Space between title and list
 
-                const SizedBox(height: 30), // Space between specials
+                // List of Specials
+                _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750', 'Juicy, tender steak grilled to perfection and served with sides.'),
+                _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750', 'Fresh oysters served with lemon and cocktail sauce.'),
+                _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900', 'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
+                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750', 'A decadent chocolate cake with a gooey molten center.'),
+                _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150', 'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
+
+                const SizedBox(height: 30), // Space before the end
               ],
             ),
           ),
@@ -77,7 +116,8 @@ class Specials extends StatelessWidget {
                   children: [
                     Text(
                       dishName,
-                      style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
+                      style: const TextStyle(
+                          fontSize: 14, fontWeight: FontWeight.bold),
                       maxLines: 1, // Limit to one line
                       overflow: TextOverflow.ellipsis, // Add ellipsis if overflow
                     ),
@@ -87,7 +127,8 @@ class Specials extends StatelessWidget {
                     ),
                     Text(
                       description,
-                      style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Colors.black),
+                      style: const TextStyle(
+                          fontSize: 12, fontFamily: 'Gabarito-Regular', color: Colors.black),
                       maxLines: 2, // Limit to two lines
                       overflow: TextOverflow.ellipsis, // Add ellipsis if overflow
                     ),

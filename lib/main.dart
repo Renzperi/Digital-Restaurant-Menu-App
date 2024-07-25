@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 238, 7, 7)),
         useMaterial3: true,
       ),
       initialRoute: '/',
@@ -42,84 +42,87 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Center(
-        child: Text(
-          'DIGIRESTO',
+        title: const Text(
+          'DigiResto',
           style: TextStyle(
-            fontFamily: 'Rosarivo-Regular',
+            color: Colors.white,
+            fontSize: 30,
+            fontFamily: 'Gabarito-Bold',
           ),
         ),
-      )),
+        centerTitle: true, // Ensure the title is centered
+        toolbarHeight: kToolbarHeight, // Use default AppBar height
+        backgroundColor: Colors.transparent, // Set background color to transparent
+        elevation: 0, // Remove shadow
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Color(0xfff0256b), Color(0xffff9a68)], // Gradient colors
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+          ),
+        ),
+      ),
       body: IndexedStack(
         index: _currentIndex,
         children: [
           Navigator(
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
-                builder: (context) =>
-                    const Appetizer(), //Route papuntang appetizer page
+                builder: (context) => const Appetizer(), // Route to appetizer page
               );
             },
           ),
           Navigator(
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
-                builder: (context) =>
-                    const MainDish(), //Route papuntang main dish page
+                builder: (context) => const MainDish(), // Route to main dish page
               );
             },
           ),
           Navigator(
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
-                builder: (context) =>
-                    const Dessert(), //Route papuntang About us
+                builder: (context) => const Dessert(), // Route to dessert page
               );
             },
           ),
           Navigator(
             onGenerateRoute: (settings) {
               return MaterialPageRoute(
-                builder: (context) =>
-                    const Specials(), //Route papuntang Specials
+                builder: (context) => const Specials(), // Route to specials page
               );
             },
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex,
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index; // Update the selected tab index
-          });
-        },
-        selectedItemColor: Colors.black, //color of bottom nav label if selected
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.breakfast_dining,
-                color: Color.fromARGB(255, 203, 236, 15)), //color of appetizer
-            label: 'Appetizers',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.restaurant_menu_sharp,
-              color: Color.fromARGB(255, 247, 4, 4), //color of main dishes
-            ),
-            label: 'Main',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.cake_sharp,
-                color: Color.fromARGB(255, 255, 119, 183)), //color of desserts
-            label: 'Desserts',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.star_purple500_rounded,
-                color: Color.fromARGB(255, 0, 255, 0)), //color of specials
-            label: 'Specials',
-          ),
-        ],
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            _buildBottomNavItem(Icons.breakfast_dining, 'Appetizers', 0),
+            _buildBottomNavItem(Icons.restaurant_menu_sharp, 'Main', 1),
+            _buildBottomNavItem(Icons.cake_sharp, 'Desserts', 2),
+            _buildBottomNavItem(Icons.star_purple500_rounded, 'Specials', 3),
+          ],
+        ),
       ),
+    );
+  }
+
+  Widget _buildBottomNavItem(IconData icon, String label, int index) {
+    return IconButton(
+      icon: Icon(
+        icon,
+        color: _currentIndex == index ? Colors.black : Colors.black54,
+      ),
+      onPressed: () {
+        setState(() {
+          _currentIndex = index;
+        });
+      },
+      tooltip: label,
     );
   }
 }
