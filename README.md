@@ -1,4 +1,4 @@
-# DigiResto
+![image](https://github.com/user-attachments/assets/5b170a54-5430-4ecb-8de3-62de42838390)# DigiResto
 
 ![Logo](https://github.com/user-attachments/assets/1f3d04bb-5861-4497-aba1-edb0ebe07c33)
 
@@ -91,30 +91,34 @@ The following widgets are used in the projects:
 ## 21. Colo
 -  Represents colors and their interpolation.
 
+# <font size="5">✅ Final Output</font>
+<b>Splash Screen<b><br>
+![image](https://github.com/user-attachments/assets/b0d5f9c7-ddaf-4ebf-b5ab-b6691556051d)
+</p><br>
 
+<b>Appetizers Page<b><br>
+![image](https://github.com/user-attachments/assets/48602433-b5ad-49ac-a261-c720976af6d7)
+</p><br>
 
+<b>Main Dish Page<b><br>
+![image](https://github.com/user-attachments/assets/ed9b77b0-8021-462c-b42a-bc4748d0ac6b)
+</p><br>
 
+<b>Desserts Page<b><br>
+![image](https://github.com/user-attachments/assets/7b0fcf13-9582-44dc-9c17-14149ec0ec6d)
+</p><br>
 
+<b>Specials Page<b><br>
+![image](https://github.com/user-attachments/assets/f5fd1b09-26b4-491a-8064-71e0cc8a8c9d)
+</p><br>
 
+<b>Scrollable View Title(color fade)<b><br>
+![image](https://github.com/user-attachments/assets/a43991f5-ab5c-4925-a253-23b2e86f5bfd)
+</p><br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<b>Pop-up Alert Dialog<b><br>
+![image](https://github.com/user-attachments/assets/495ee1b9-b711-49cc-bec2-f42e338cd63f)
+</p><br>
 
 
 
