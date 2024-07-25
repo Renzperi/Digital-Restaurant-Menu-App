@@ -77,11 +77,11 @@ class _MainDishState extends State<MainDish> {
                     ),
                   ),
                 ),
-                _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750', 'Juicy, tender steak grilled to perfection and served with sides.'),
-                _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150', 'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
-                _buildPicture(context, 'assets/images/lamb chops.jpg', 'Lamb Chops', '₱150', 'Tender lamb chops grilled and served with mint sauce.'),
-                _buildPicture(context, 'assets/images/chicken wings.jpg', 'Chicken Wings', '₱150', 'Crispy chicken wings tossed in your choice of sauce.'),
-                _buildPicture(context, 'assets/images/Beef-Burgers.jpg', 'Beef Burgers', '₱150', 'Classic beef burger with lettuce, tomato, and cheese.'),
+                _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱1649', 'Juicy, tender steak grilled to perfection and served with sides.'),
+                _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱849', 'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
+                _buildPicture(context, 'assets/images/lamb chops.jpg', 'Lamb Chops', '₱1349', 'Tender lamb chops grilled and served with mint sauce.'),
+                _buildPicture(context, 'assets/images/chicken wings.jpg', 'Chicken Wings', '₱649', 'Crispy chicken wings tossed in your choice of sauce.'),
+                _buildPicture(context, 'assets/images/Beef-Burgers.jpg', 'Beef Burgers', '₱549', 'Classic beef burger with lettuce, tomato, and cheese.'),
 
                 const SizedBox(height: 30), // Space between categories
                 const Center(
@@ -94,11 +94,11 @@ class _MainDishState extends State<MainDish> {
                     ),
                   ),
                 ),
-                _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750', 'Fresh oysters served with lemon and cocktail sauce.'),
-                _buildPicture(context, 'assets/images/grilled salmon.jpeg', 'Grilled Salmon', '₱750', 'Grilled salmon fillet served with a side of vegetables.'),
-                _buildPicture(context, 'assets/images/lobster-tail.jpg', 'Lobster Tail', '₱750', 'Succulent lobster tail served with drawn butter.'),
-                _buildPicture(context, 'assets/images/tuna_steak.jpg', 'Grilled Tuna Steak', '₱750', 'Grilled tuna steak served rare with a side of greens.'),
-                _buildPicture(context, 'assets/images/Calamari.jpg', 'Calamari', '₱750', 'Crispy fried calamari served with marinara sauce.'),
+                _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱749', 'Fresh oysters served with lemon and cocktail sauce.'),
+                _buildPicture(context, 'assets/images/grilled salmon.jpeg', 'Grilled Salmon', '₱649', 'Grilled salmon fillet served with a side of vegetables.'),
+                _buildPicture(context, 'assets/images/lobster-tail.jpg', 'Lobster Tail', '₱629', 'Succulent lobster tail served with drawn butter.'),
+                _buildPicture(context, 'assets/images/tuna_steak.jpg', 'Grilled Tuna Steak', '₱729', 'Grilled tuna steak served rare with a side of greens.'),
+                _buildPicture(context, 'assets/images/Calamari.jpg', 'Calamari', '₱329', 'Crispy fried calamari served with marinara sauce.'),
 
                 const SizedBox(height: 30), // Space between categories
                 const Center(
@@ -111,9 +111,9 @@ class _MainDishState extends State<MainDish> {
                     ),
                   ),
                 ),
-                _buildPicture(context, 'assets/images/cauliflower curry.jpg', 'Cauliflower Curry', '₱900', 'Spicy cauliflower curry served with rice.'),
-                _buildPicture(context, 'assets/images/eggplant-parmesan.jpg', 'Eggplant Parmesan', '₱900', 'Breaded eggplant slices baked with marinara sauce and cheese.'),
-                _buildPicture(context, 'assets/images/greeksalad.jpg', 'Greek Salad', '₱900', 'Fresh salad with cucumbers, tomatoes, olives, and feta cheese.'),
+                _buildPicture(context, 'assets/images/cauliflower curry.jpg', 'Cauliflower Curry', '₱449', 'Spicy cauliflower curry served with rice.'),
+                _buildPicture(context, 'assets/images/eggplant-parmesan.jpg', 'Eggplant Parmesan', '₱349', 'Breaded eggplant slices baked with marinara sauce and cheese.'),
+                _buildPicture(context, 'assets/images/greeksalad.jpg', 'Greek Salad', '₱649', 'Fresh salad with cucumbers, tomatoes, olives, and feta cheese.'),
 
                 const SizedBox(height: 30), // Space between categories
                 const Center(
@@ -126,10 +126,10 @@ class _MainDishState extends State<MainDish> {
                     ),
                   ),
                 ),
-                _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900', 'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
-                _buildPicture(context, 'assets/images/Lasagna.jpg', 'Lasagna', '₱900', 'Layers of pasta, meat sauce, ricotta, and mozzarella.'),
-                _buildPicture(context, 'assets/images/Carbonara.jpg', 'Carbonara', '₱900', 'Pasta with creamy egg sauce, pancetta, and Parmesan.'),
-                _buildPicture(context, 'assets/images/Mac-Cheese.jpg', 'Mac and Cheese', '₱900', 'Creamy macaroni and cheese baked to perfection.'),
+                _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱999', 'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
+                _buildPicture(context, 'assets/images/Lasagna.jpg', 'Lasagna', '₱799', 'Layers of pasta, meat sauce, ricotta, and mozzarella.'),
+                _buildPicture(context, 'assets/images/Carbonara.jpg', 'Carbonara', '₱449', 'Pasta with creamy egg sauce, pancetta, and Parmesan.'),
+                _buildPicture(context, 'assets/images/Mac-Cheese.jpg', 'Mac and Cheese', '₱349', 'Creamy macaroni and cheese baked to perfection.'),
 
                 const SizedBox(height: 30), // Space before the end
               ],
