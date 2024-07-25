@@ -11,28 +11,37 @@ class Specials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Column(
-        children: [
-          const Text(
-            'SPECIALS MENU',
-            style: TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            expandedHeight: 150.0, // Set the height of the expanded AppBar
+            flexibleSpace: FlexibleSpaceBar(
+              title: const Text(
+                'SPECIALS MENU',
+                style: TextStyle(
+                  fontFamily: 'Gabarito-Regular',
+                  fontSize: 20,
+                ),
+              ),
+              centerTitle: true,
+              background: Container(
+                color: Colors.white, // Optional: Add a background color
+              ),
+            ),
+            pinned: true, // Makes the AppBar stick at the top
+            floating: false, // Make it not float over the content
+            snap: false, // Snap effect when scrolling
           ),
-          const SizedBox(height: 20), // Space between title and list
-          Expanded(
-            child: ListView(
-              children: [
+          SliverList(
+            delegate: SliverChildListDelegate(
+              [
+                const SizedBox(height: 20), // Space between title and list
                 // List of Specials
-                _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750',
-                    'Juicy, tender steak grilled to perfection and served with sides.'),
-                _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750',
-                    'Fresh oysters served with lemon and cocktail sauce.'),
-                _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900',
-                    'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
-                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750',
-                    'A decadent chocolate cake with a gooey molten center.'),
-                _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150',
-                    'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
+                _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750', 'Juicy, tender steak grilled to perfection and served with sides.'),
+                _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750', 'Fresh oysters served with lemon and cocktail sauce.'),
+                _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900', 'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
+                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750', 'A decadent chocolate cake with a gooey molten center.'),
+                _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150', 'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
                 // End of Specials
 
                 const SizedBox(height: 30), // Space between specials

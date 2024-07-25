@@ -1,5 +1,3 @@
-// splash_screen.dart
-
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -17,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     _startFadeEffect();
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 7), () {
       Navigator.of(context).pushReplacementNamed('/home');
     });
   }
@@ -33,16 +31,22 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: AnimatedOpacity(
-          opacity: _opacity,
-          duration: const Duration(seconds: 2),
-          child: const Text(
-            'DIGIRESTO',
-            style: TextStyle(
-              fontSize: 48.0,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Rosarivo-Regular',
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Color(0xfff0256b), Color(0xffff9a68)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: Center(
+          child: AnimatedOpacity(
+            opacity: _opacity,
+            duration: const Duration(seconds: 2),
+            child: Image.asset(
+              'assets/images/Logo.png',
+              width: 900.0, // Adjust the width as needed
+              height: 900.0, // Adjust the height as needed
             ),
           ),
         ),
