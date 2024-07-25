@@ -6,7 +6,7 @@
 ## Project Overview
 Title - DigiResto
 
-"DigiResto" is a mobile applicatio designed to digitalize the restaurant menu experience, facilitating convenient access and interaction with menu offerings via smartphones and tablets. The app aims to improve customer engagement by presenting detailed menu items, including descriptions, prices, and visuals, thereby streamlining the ordering process.
+"DigiResto" is a mobile application designed to digitalize the restaurant menu experience, facilitating convenient access and interaction with menu offerings via smartphones and tablets. The app aims to improve customer engagement by presenting detailed menu items, including descriptions, prices, and visuals, thereby streamlining the ordering process.
 
 
 
