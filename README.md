@@ -85,6 +85,12 @@ The following widgets are used in the projects:
 ## 19. TextButton
 -  Displays a button with text.
 
+## 20. ScrollController
+-  Controls and listens to scroll events.
+
+## 21. Colo
+-  Represents colors and their interpolation.
+
 
 
 
