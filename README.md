@@ -53,6 +53,10 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 8. BackdropFilter
 - Applies filters like blur to the background.
 
+### 9. Container
+- A box model for decoration, padding, and constraints.
+
+
 
 
 
