@@ -64,6 +64,7 @@ The following widgets are used in the projects:
 
 
 
+![image](https://github.com/user-attachments/assets/c6e2809c-c3d0-4e53-a097-15d8c87eea91)
 
 
 
