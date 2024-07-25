@@ -73,7 +73,8 @@ The following widgets are used in the projects:
 ## 15. Column
 -  Arranges children vertically.
 
-
+## 16. Text
+- Displays a string of text with style options.
 
 
 
