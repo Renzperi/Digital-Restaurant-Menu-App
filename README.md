@@ -56,6 +56,9 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 9. Container
 - A box model for decoration, padding, and constraints.
 
+### 10. SliverList
+- A list of items integrated with a CustomScrollView.
+
 
 
 
