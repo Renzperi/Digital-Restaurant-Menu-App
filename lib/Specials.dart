@@ -71,7 +71,7 @@ class _SpecialsState extends State<Specials> {
                 _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750', 'Juicy, tender steak grilled to perfection and served with sides.'),
                 _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750', 'Fresh oysters served with lemon and cocktail sauce.'),
                 _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900', 'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
-                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750', 'A decadent chocolate cake with a gooey molten center.'),
+                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱649', 'A decadent chocolate cake with a gooey molten center.'),
                 _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150', 'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
 
                 const SizedBox(height: 30), // Space before the end

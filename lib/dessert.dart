@@ -85,10 +85,10 @@ class _DessertState extends State<Dessert> {
             delegate: SliverChildListDelegate(
               [
                 const SizedBox(height: 20), // Space between title and list
-                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750', 'A decadent chocolate cake with a gooey molten center.'),
-                _buildPicture(context, 'assets/images/Cheese Cake.jpg', 'Cheese Cake', '₱150', 'A rich and creamy cheesecake with a graham cracker crust.'),
-                _buildPicture(context, 'assets/images/Strawberry Cake.jpg', 'Strawberry Cake', '₱150', 'A moist cake layered with fresh strawberries and cream.'),
-                _buildPicture(context, 'assets/images/Blue Berry Cheese Cake.jpg', 'Blue Berry Cheese Cake', '₱150', 'Classic cheesecake topped with a sweet blueberry compote.'),
+                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱649', 'A decadent chocolate cake with a gooey molten center.'),
+                _buildPicture(context, 'assets/images/Cheese Cake.jpg', 'Cheese Cake', '₱649', 'A rich and creamy cheesecake with a graham cracker crust.'),
+                _buildPicture(context, 'assets/images/Strawberry Cake.jpg', 'Strawberry Cake', '₱699', 'A moist cake layered with fresh strawberries and cream.'),
+                _buildPicture(context, 'assets/images/Blue Berry Cheese Cake.jpg', 'Blue Berry Cheese Cake', '₱699', 'Classic cheesecake topped with a sweet blueberry compote.'),
                 const SizedBox(height: 30), // Space between categories
                 const Center(
                   child: Text(
@@ -101,9 +101,9 @@ class _DessertState extends State<Dessert> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                _buildPicture(context, 'assets/images/banana split.jpg', 'Banana Split', '₱150', 'A classic dessert with bananas, ice cream, and a variety of toppings.'),
-                _buildPicture(context, 'assets/images/Ice-Cream-Sundae.jpg', 'Ice Cream Sundae', '₱150', 'Ice cream topped with sauces, nuts, and whipped cream.'),
-                _buildPicture(context, 'assets/images/Gelato.jpg', 'Gelato', '₱150', 'A rich and creamy Italian-style ice cream.'),
+                _buildPicture(context, 'assets/images/banana split.jpg', 'Banana Split', '₱249', 'A classic dessert with bananas, ice cream, and a variety of toppings.'),
+                _buildPicture(context, 'assets/images/Ice-Cream-Sundae.jpg', 'Ice Cream Sundae', '₱249', 'Ice cream topped with sauces, nuts, and whipped cream.'),
+                _buildPicture(context, 'assets/images/Gelato.jpg', 'Gelato', '₱349', 'A rich and creamy Italian-style ice cream.'),
                 const SizedBox(height: 30), // Space between categories
                 const Center(
                   child: Text(
@@ -115,9 +115,9 @@ class _DessertState extends State<Dessert> {
                     ),
                   ),
                 ),
-                _buildPicture(context, 'assets/images/Blue Berry Pie.jpg', 'Blue Berry Pie', '₱900', 'A pie filled with sweet and tangy blueberries.'),
-                _buildPicture(context, 'assets/images/Apple Pie.jpg', 'Apple Pie', '₱900', 'A classic pie with spiced apples and a flaky crust.'),
-                _buildPicture(context, 'assets/images/Cherry Pie.jpg', 'Cherry Pie', '₱900', 'A tart and sweet pie made with fresh cherries.'),
+                _buildPicture(context, 'assets/images/Blue Berry Pie.jpg', 'Blue Berry Pie', '₱699', 'A pie filled with sweet and tangy blueberries.'),
+                _buildPicture(context, 'assets/images/Apple Pie.jpg', 'Apple Pie', '₱649', 'A classic pie with spiced apples and a flaky crust.'),
+                _buildPicture(context, 'assets/images/Cherry Pie.jpg', 'Cherry Pie', '₱699', 'A tart and sweet pie made with fresh cherries.'),
                 const SizedBox(height: 30), // Space between categories
                 const Center(
                   child: Text(
@@ -129,9 +129,9 @@ class _DessertState extends State<Dessert> {
                     ),
                   ),
                 ),
-                _buildPicture(context, 'assets/images/Chocolate Pudding.jpg', 'Chocolate Pudding', '₱900', 'A rich and creamy chocolate dessert.'),
-                _buildPicture(context, 'assets/images/Bread Pudding.jpg', 'Bread Pudding', '₱900', 'A warm and comforting dessert made with bread and custard.'),
-                _buildPicture(context, 'assets/images/Vanilla Pudding.jpg', 'Vanilla Pudding', '₱900', 'A smooth and creamy vanilla-flavored pudding.'),
+                _buildPicture(context, 'assets/images/Chocolate Pudding.jpg', 'Chocolate Pudding', '₱349', 'A rich and creamy chocolate dessert.'),
+                _buildPicture(context, 'assets/images/Bread Pudding.jpg', 'Bread Pudding', '₱329', 'A warm and comforting dessert made with bread and custard.'),
+                _buildPicture(context, 'assets/images/Vanilla Pudding.jpg', 'Vanilla Pudding', '₱349', 'A smooth and creamy vanilla-flavored pudding.'),
                 const SizedBox(height: 30), // Space before the end
               ],
             ),
