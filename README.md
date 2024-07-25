@@ -44,6 +44,8 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 5. FlexibleSpaceBar
 - A flexible app bar that adjusts its content based on scrolling.
 
+### 6. Stack
+- Allows multiple children to be layered on top of each other.
 
 
 
