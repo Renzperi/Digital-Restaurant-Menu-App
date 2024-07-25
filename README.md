@@ -1,4 +1,4 @@
-# Digiresto
+# DigiResto
 
 ![Logo](https://github.com/user-attachments/assets/1f3d04bb-5861-4497-aba1-edb0ebe07c33)
 
