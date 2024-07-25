@@ -35,6 +35,10 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 2. Scaffold
 - Provides a basic layout structure for the app, including an `AppBar`, `Body`, and other elements.
 
+### 3. CustomScrollView
+- Allows custom scrolling effects and multiple scrollable areas.
+
+
 
 
 
