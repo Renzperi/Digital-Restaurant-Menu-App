@@ -47,6 +47,8 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 6. Stack
 - Allows multiple children to be layered on top of each other.
 
+### 7. Image
+- Displays an image from assets.
 
 
 
