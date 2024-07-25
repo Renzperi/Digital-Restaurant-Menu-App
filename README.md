@@ -70,6 +70,9 @@ The following widgets are used in the projects:
 ## 14. ClipRRect
 - Clips the child widget to a rounded rectangle.
 
+## 15. Column
+-  Arranges children vertically.
+
 
 
 
