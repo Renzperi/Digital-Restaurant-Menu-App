@@ -1,6 +1,7 @@
 # digital_restaurant_menu_app
 
-A new Flutter project.
+![Logo](https://github.com/user-attachments/assets/1f3d04bb-5861-4497-aba1-edb0ebe07c33)
+
 
 ## Getting Started
 
