@@ -1,6 +1,7 @@
 # DigiResto
 
-![Logo](https://github.com/user-attachments/assets/1f3d04bb-5861-4497-aba1-edb0ebe07c33)
+![image](https://github.com/user-attachments/assets/d845db92-0f6e-441c-a997-f79e0f4370d0)
+
 
 
 ### Project Overview
