@@ -41,6 +41,9 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 4. SliverAppBar
 - A material design app bar integrated with custom scrolling effects.
 
+### 5. FlexibleSpaceBar
+- A flexible app bar that adjusts its content based on scrolling.
+
 
 
 
