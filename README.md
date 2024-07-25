@@ -25,6 +25,12 @@ The project consists of the following main files:
 - main_dish.dart: Contains the Main Dish menu page.
 - splash_screen.dart: Contains the Splash Screen widget.
 
+## Widgets
+The following widgets are used in the projects:
+Here’s the consolidated list of all the widgets used in the provided code:
+
+### 1. MaterialApp
+- Sets up the application with Material Design and routing.
 
 
 
