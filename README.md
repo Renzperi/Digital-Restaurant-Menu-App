@@ -32,7 +32,8 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 1. MaterialApp
 - Sets up the application with Material Design and routing.
 
-
+### 2. Scaffold
+- Provides a basic layout structure for the app, including an `AppBar`, `Body`, and other elements.
 
 
 
