@@ -59,7 +59,8 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 10. SliverList
 - A list of items integrated with a CustomScrollView.
 
-
+### 11. SliverChildListDelegate
+- Provides a static list of children for a SliverList`.
 
 
 
