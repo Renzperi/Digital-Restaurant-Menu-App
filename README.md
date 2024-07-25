@@ -79,6 +79,16 @@ The following widgets are used in the projects:
 ## 17. AlertDialog
 -  Displays a dialog with a title, content, and actions.
 
+## 18. SingleChildScrollView
+- Provides a scrollable area for a single child.
+
+## 19. TextButton
+-  Displays a button with text.
+
+
+
+
+
 
 
 
