@@ -59,7 +59,17 @@ The following widgets are used in the projects:
 - A list of items integrated with a CustomScrollView.
 
 ## 11. SliverChildListDelegate
-- Provides a static list of children for a SliverList`.
+- Provides a static list of children for a SliverList.
+
+### 12. InkWell
+-  Adds a material design ripple effect that responds to taps.
+
+
+
+
+
+
+
 
 
 
