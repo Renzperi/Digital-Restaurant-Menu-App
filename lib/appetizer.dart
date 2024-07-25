@@ -85,10 +85,10 @@ class _AppetizerState extends State<Appetizer> {
             delegate: SliverChildListDelegate(
               [
                 const SizedBox(height: 20), // Space between title and list
-                _buildPicture(context, 'assets/images/buffalo-chicken-dip.jpg', 'Buffalo Chicken Dip', '₱150', 'A creamy, spicy dip made with shredded chicken, cream cheese, and Buffalo sauce.'),
-                _buildPicture(context, 'assets/images/Caeser Salad.png', 'Caesar Salad', '₱150', 'Crispy romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.'),
-                _buildPicture(context, 'assets/images/Blue-Cheese-Dip.jpg', 'Blue Cheese Dip', '₱150', 'A rich and tangy dip made with creamy blue cheese and sour cream.'),
-                _buildPicture(context, 'assets/images/Bacon-Cheddar-Dip.jpg', 'Bacon Cheddar Dip', '₱150', 'A savory dip with crispy bacon, sharp cheddar cheese, and creamy base.'),
+                _buildPicture(context, 'assets/images/buffalo-chicken-dip.jpg', 'Buffalo Chicken Dip', '₱149', 'A creamy, spicy dip made with shredded chicken, cream cheese, and Buffalo sauce.'),
+                _buildPicture(context, 'assets/images/Caeser Salad.png', 'Caesar Salad', '₱299', 'Crispy romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.'),
+                _buildPicture(context, 'assets/images/Blue-Cheese-Dip.jpg', 'Blue Cheese Dip', '₱299', 'A rich and tangy dip made with creamy blue cheese and sour cream.'),
+                _buildPicture(context, 'assets/images/Bacon-Cheddar-Dip.jpg', 'Bacon Cheddar Dip', '₱149', 'A savory dip with crispy bacon, sharp cheddar cheese, and creamy base.'),
                 const SizedBox(height: 30), // Space between categories
                 const Center(
                   child: Text(
@@ -101,8 +101,8 @@ class _AppetizerState extends State<Appetizer> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                _buildPicture(context, 'assets/images/Red Wine.jpg', 'Red Wine', '₱250', 'A selection of fine red wines to complement your meal.'),
-                _buildPicture(context, 'assets/images/White Wine.jpg', 'White Wine', '₱250', 'A selection of crisp and refreshing white wines.'),
+                _buildPicture(context, 'assets/images/Red Wine.jpg', 'Red Wine', '₱249', 'A selection of fine red wines to complement your meal.'),
+                _buildPicture(context, 'assets/images/White Wine.jpg', 'White Wine', '₱249', 'A selection of crisp and refreshing white wines.'),
                 const SizedBox(height: 30), // Space between categories
                 const Center(
                   child: Text(
@@ -114,10 +114,10 @@ class _AppetizerState extends State<Appetizer> {
                     ),
                   ),
                 ),
-                _buildPicture(context, 'assets/images/Crame brulee.jpg', 'Creme Brulee', '₱150', 'A creamy custard dessert topped with a layer of caramelized sugar.'),
-                _buildPicture(context, 'assets/images/Caprese Skewers.jpg', 'Caprese Skewers', '₱150', 'Skewers of cherry tomatoes, mozzarella, and basil drizzled with balsamic glaze.'),
-                _buildPicture(context, 'assets/images/Strawberry-Balsamic-Bruschetta.jpg', 'Strawberry Balsamic Bruschetta', '₱150', 'Toasted baguette topped with strawberries, basil, and balsamic reduction.'),
-                _buildPicture(context, 'assets/images/stuffed-dates.jpg', 'Stuffed Dates', '₱150', 'Dates filled with creamy goat cheese and a sprinkle of nuts.'),
+                _buildPicture(context, 'assets/images/Crame brulee.jpg', 'Creme Brulee', '₱199', 'A creamy custard dessert topped with a layer of caramelized sugar.'),
+                _buildPicture(context, 'assets/images/Caprese Skewers.jpg', 'Caprese Skewers', '₱189', 'Skewers of cherry tomatoes, mozzarella, and basil drizzled with balsamic glaze.'),
+                _buildPicture(context, 'assets/images/Strawberry-Balsamic-Bruschetta.jpg', 'Strawberry Balsamic Bruschetta', '₱199', 'Toasted baguette topped with strawberries, basil, and balsamic reduction.'),
+                _buildPicture(context, 'assets/images/stuffed-dates.jpg', 'Stuffed Dates', '₱179', 'Dates filled with creamy goat cheese and a sprinkle of nuts.'),
                 const SizedBox(height: 30), // Space before the end
               ],
             ),
