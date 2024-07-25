@@ -14,36 +14,28 @@ class Specials extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children: [
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+          const Text(
+            'SPECIALS MENU',
+            style: TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
+          ),
+          const SizedBox(height: 20), // Space between title and list
+          Expanded(
+            child: ListView(
               children: [
-                const Text(
-                  'SPECIALS MENU',
-                  style: TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
-                ),
-                const SizedBox(height: 20), // Space between DIGIRESTO and pictures
-                SizedBox(
-                  height: 350, // Adjust height to accommodate text below images
-                  child: ListView(
-                    scrollDirection: Axis.vertical,
-                    children: [
-                      // List of Specials
-                      _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750',
-                          'Juicy, tender steak grilled to perfection and served with sides.'),
-                      _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750',
-                          'Fresh oysters served with lemon and cocktail sauce.'),
-                      _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900',
-                          'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
-                      _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750',
-                          'A decadent chocolate cake with a gooey molten center.'),
-                      _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150',
-                          'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
-                      // End of Specials
-                      const SizedBox(height: 30), // Add space between Main Course and Appetizers
-                    ],
-                  ),
-                ),
+                // List of Specials
+                _buildPicture(context, 'assets/images/grilled steak.jpg', 'Grilled Steak', '₱750',
+                    'Juicy, tender steak grilled to perfection and served with sides.'),
+                _buildPicture(context, 'assets/images/oysters.jpg', 'Oysters on the Half Shell', '₱750',
+                    'Fresh oysters served with lemon and cocktail sauce.'),
+                _buildPicture(context, 'assets/images/pizza ittaliano.png', 'Pizza Italiano', '₱900',
+                    'Classic Italian pizza with fresh tomatoes, mozzarella, and basil.'),
+                _buildPicture(context, 'assets/images/Lava Cake.jpg', 'Lava Cake', '₱750',
+                    'A decadent chocolate cake with a gooey molten center.'),
+                _buildPicture(context, 'assets/images/roast chicken.jpg', 'Roast Chicken', '₱150',
+                    'Herb-seasoned roast chicken served with roasted potatoes and vegetables.'),
+                // End of Specials
+
+                const SizedBox(height: 30), // Space between specials
               ],
             ),
           ),
