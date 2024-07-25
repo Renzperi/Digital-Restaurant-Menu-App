@@ -61,8 +61,13 @@ The following widgets are used in the projects:
 ## 11. SliverChildListDelegate
 - Provides a static list of children for a SliverList.
 
-### 12. InkWell
+## 12. InkWell
 -  Adds a material design ripple effect that responds to taps.
+
+## 13. Card
+- Displays content with a shadow and rounded corners.
+
+
 
 
 
