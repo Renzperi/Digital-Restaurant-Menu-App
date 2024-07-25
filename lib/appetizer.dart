@@ -14,74 +14,67 @@ class Appetizer extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children: [
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+          const Text(
+            'APPETIZERS MENU',
+            style: TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
+          ),
+          const SizedBox(height: 20), // Space between title and list
+          Expanded(
+            child: ListView(
               children: [
-                const Text(
-                  'APPETIZERS MENU',
-                  style: TextStyle(fontFamily: 'Rosarivo-Regular', fontSize: 20),
-                ),
-                const SizedBox(height: 20), // Space between DIGIRESTO and pictures
-                SizedBox(
-                  height: 350, // Adjust height to accommodate text below images
-                  child: ListView(
-                    scrollDirection: Axis.vertical,
-                    children: [
-                      const Center(
-                        child: Text(
-                          'Chip and Dips',
-                          style: TextStyle(
-                            fontFamily: 'Rosarivo-Regular',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      //list of chips and dips
-                      _buildPicture(context, 'assets/images/buffalo-chicken-dip.jpg', 'Buffalo Chicken Dip', '₱150', 'A creamy, spicy dip made with shredded chicken, cream cheese, and Buffalo sauce.'),
-                      _buildPicture(context, 'assets/images/Caeser Salad.png', 'Caesar Salad', '₱150', 'Crispy romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.'),
-                      _buildPicture(context, 'assets/images/Blue-Cheese-Dip.jpg', 'Blue Cheese Dip', '₱150', 'A rich and tangy dip made with creamy blue cheese and sour cream.'),
-                      _buildPicture(context, 'assets/images/Bacon-Cheddar-Dip.jpg', 'Bacon Cheddar Dip', '₱150', 'A savory dip with crispy bacon, sharp cheddar cheese, and creamy base.'),
-                      //end of chips and dips
-
-                      const SizedBox(height: 30), // Add space between Main Course and Appetizers
-                      const Center(
-                        child: Text(
-                          'Cocktails',
-                          style: TextStyle(
-                            fontFamily: 'Rosarivo-Regular',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      //list of cocktails
-                      _buildPicture(context, 'assets/images/Red Wine.jpg', 'Red Wine', '₱250', 'A selection of fine red wines to complement your meal.'),
-                      _buildPicture(context, 'assets/images/White Wine.jpg', 'White Wine', '₱250', 'A selection of crisp and refreshing white wines.'),
-                      //end of cocktails
-                      const SizedBox(height: 30), // Add space between Desserts and Appetizers
-                      const Center(
-                        child: Text(
-                          'Fruit Appetizers',
-                          style: TextStyle(
-                            fontFamily: 'Rosarivo-Regular',
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      //list of fruit appetizers
-                      _buildPicture(context, 'assets/images/Crame brulee.jpg', 'Creme Brulee', '₱150', 'A creamy custard dessert topped with a layer of caramelized sugar.'),
-                      _buildPicture(context, 'assets/images/Caprese Skewers.jpg', 'Caprese Skewers', '₱150', 'Skewers of cherry tomatoes, mozzarella, and basil drizzled with balsamic glaze.'),
-                      _buildPicture(context, 'assets/images/Strawberry-Balsamic-Bruschetta.jpg', 'Strawberry Balsamic Bruschetta', '₱150', 'Toasted baguette topped with strawberries, basil, and balsamic reduction.'),
-                      _buildPicture(context, 'assets/images/stuffed-dates.jpg', 'Stuffed Dates', '₱150', 'Dates filled with creamy goat cheese and a sprinkle of nuts.'),
-                      //end of fruit appetizers
-                      const SizedBox(height: 30), // Add space between Desserts and Beverages
-                    ],
+                const Center(
+                  child: Text(
+                    'Chip and Dips',
+                    style: TextStyle(
+                      fontFamily: 'Rosarivo-Regular',
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
+                // List of chips and dips
+                _buildPicture(context, 'assets/images/buffalo-chicken-dip.jpg', 'Buffalo Chicken Dip', '₱150', 'A creamy, spicy dip made with shredded chicken, cream cheese, and Buffalo sauce.'),
+                _buildPicture(context, 'assets/images/Caeser Salad.png', 'Caesar Salad', '₱150', 'Crispy romaine lettuce tossed with Caesar dressing, croutons, and parmesan cheese.'),
+                _buildPicture(context, 'assets/images/Blue-Cheese-Dip.jpg', 'Blue Cheese Dip', '₱150', 'A rich and tangy dip made with creamy blue cheese and sour cream.'),
+                _buildPicture(context, 'assets/images/Bacon-Cheddar-Dip.jpg', 'Bacon Cheddar Dip', '₱150', 'A savory dip with crispy bacon, sharp cheddar cheese, and creamy base.'),
+                // End of chips and dips
+
+                const SizedBox(height: 30), // Space between categories
+                const Center(
+                  child: Text(
+                    'Cocktails',
+                    style: TextStyle(
+                      fontFamily: 'Rosarivo-Regular',
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                // List of cocktails
+                _buildPicture(context, 'assets/images/Red Wine.jpg', 'Red Wine', '₱250', 'A selection of fine red wines to complement your meal.'),
+                _buildPicture(context, 'assets/images/White Wine.jpg', 'White Wine', '₱250', 'A selection of crisp and refreshing white wines.'),
+                // End of cocktails
+
+                const SizedBox(height: 30), // Space between categories
+                const Center(
+                  child: Text(
+                    'Fruit Appetizers',
+                    style: TextStyle(
+                      fontFamily: 'Rosarivo-Regular',
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                // List of fruit appetizers
+                _buildPicture(context, 'assets/images/Crame brulee.jpg', 'Creme Brulee', '₱150', 'A creamy custard dessert topped with a layer of caramelized sugar.'),
+                _buildPicture(context, 'assets/images/Caprese Skewers.jpg', 'Caprese Skewers', '₱150', 'Skewers of cherry tomatoes, mozzarella, and basil drizzled with balsamic glaze.'),
+                _buildPicture(context, 'assets/images/Strawberry-Balsamic-Bruschetta.jpg', 'Strawberry Balsamic Bruschetta', '₱150', 'Toasted baguette topped with strawberries, basil, and balsamic reduction.'),
+                _buildPicture(context, 'assets/images/stuffed-dates.jpg', 'Stuffed Dates', '₱150', 'Dates filled with creamy goat cheese and a sprinkle of nuts.'),
+                // End of fruit appetizers
+
+                const SizedBox(height: 30), // Space before the end
               ],
             ),
           ),
