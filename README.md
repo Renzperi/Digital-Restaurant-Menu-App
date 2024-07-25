@@ -14,9 +14,15 @@ Title - DigiResto
 - Homepage: A centralized page featuring menu categories.
 - Bottom Navigation Bar: Allows users to switch between different menu sections (Appetizers, Main Dishes, Desserts, Specials).
 - Gradient AppBar: An attractive gradient effect on the app's top bar.
+  
+## Structure
+The project consists of the following main files:
 
-
-
+- main.dart: Entry point of the application.
+- dessert.dart: Contains the Dessert menu page.
+- specials.dart: Contains the Specials menu page.
+- appetizer.dart: Contains the Appetizer menu page.
+- main_dish.dart: Contains the Main Dish menu page.
 
 
 
