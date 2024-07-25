@@ -67,6 +67,13 @@ The following widgets are used in the projects:
 ## 13. Card
 - Displays content with a shadow and rounded corners.
 
+## 14. ClipRRect
+- Clips the child widget to a rounded rectangle.
+
+
+
+
+
 
 
 
