@@ -33,10 +33,13 @@ Here’s the consolidated list of all the widgets used in the provided code:
 - Sets up the application with Material Design and routing.
 
 ### 2. Scaffold
-- Provides a basic layout structure for the app, including an `AppBar`, `Body`, and other elements.
+- Provides a basic layout structure for the app, including an AppBar, Body, and other elements.
 
 ### 3. CustomScrollView
 - Allows custom scrolling effects and multiple scrollable areas.
+
+### 4. SliverAppBar
+- A material design app bar integrated with custom scrolling effects.
 
 
 
