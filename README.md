@@ -23,6 +23,7 @@ The project consists of the following main files:
 - specials.dart: Contains the Specials menu page.
 - appetizer.dart: Contains the Appetizer menu page.
 - main_dish.dart: Contains the Main Dish menu page.
+- splash_screen.dart: Contains the Splash Screen widget.
 
 
 
