@@ -3,9 +3,25 @@
 ![Logo](https://github.com/user-attachments/assets/1f3d04bb-5861-4497-aba1-edb0ebe07c33)
 
 
-## Getting Started
+## Project Overview
+Title - DigiResto
 
-This project is a starting point for a Flutter application.
+"DigiResto" is a mobile application designed to digitalize the restaurant menu experience, facilitating convenient access and interaction with menu offerings via smartphones and tablets. The app aims to improve customer engagement by presenting detailed menu items, including descriptions, prices, and visuals, thereby streamlining the ordering process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 A few resources to get you started if this is your first Flutter project:
 
