@@ -76,6 +76,15 @@ The following widgets are used in the projects:
 ## 16. Text
 - Displays a string of text with style options.
 
+## 17. AlertDialog
+-  Displays a dialog with a title, content, and actions.
+
+
+
+
+
+
+
 
 
 
