@@ -50,6 +50,10 @@ Here’s the consolidated list of all the widgets used in the provided code:
 ### 7. Image
 - Displays an image from assets.
 
+### 8. BackdropFilter
+- Applies filters like blur to the background.
+
+
 
 
 
