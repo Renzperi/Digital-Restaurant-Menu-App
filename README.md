@@ -9,6 +9,19 @@ Title - DigiResto
 
 "DigiResto" is a mobile application designed to digitalize the restaurant menu experience, facilitating convenient access and interaction with menu offerings via smartphones and tablets. The app aims to improve customer engagement by presenting detailed menu items, including descriptions, prices, and visuals, thereby streamlining the ordering process.
 
+### SDG 2: Zero Hunger 
+
+![SDG 2](https://github.com/user-attachments/assets/909309fa-ba6f-4cb5-a621-1af48cd1b0a1)
+
+By offering detailed nutritional information, promoting healthy food options, and supporting sustainable food practices, a menu app can contribute to food security and improved nutrition.
+
+### SDG 3: Good Health and Well-being
+
+![SDG 3](https://github.com/user-attachments/assets/16844e5d-90b4-4ea0-8db2-43cdeff6d723)
+
+The app can promote healthier eating habits by providing information on the Restaurant's menu 
+
+
 
 ### 🎯 Features
 - Splashscreen: A welcoming screen when launching the app.
