@@ -4,13 +4,13 @@
 
 
 
-### Project Overview
+### 🍽Project Overview
 Title - DigiResto
 
 "DigiResto" is a mobile application designed to digitalize the restaurant menu experience, facilitating convenient access and interaction with menu offerings via smartphones and tablets. The app aims to improve customer engagement by presenting detailed menu items, including descriptions, prices, and visuals, thereby streamlining the ordering process.
 
 
-### Features
+### 🎯Features
 - Splashscreen: A welcoming screen when launching the app.
 - Homepage: A centralized page featuring menu categories.
 - Bottom Navigation Bar: Allows users to switch between different menu sections (Appetizers, Main Dishes, Desserts, Specials).
@@ -122,7 +122,7 @@ The following widgets are used in the projects:
 </p><br>
 
 
-## Members (BSIT-3307)
+## 🙎‍♂️Members (BSIT-3307)
 - Acebo, Mark Aldrin B.
 - Inandan, Renzperi D.
 - Luna, Gabriel Luis R.
